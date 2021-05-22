@@ -26,9 +26,7 @@ def get_url(obj):
     return sapi_proxy_url
 
     # # without proxy (WARNING: uses your ip address)
-    # splash_payload = {'url' : obj['url'], 'wait': 9, 'proxy': ''}
-    # splash_proxy_url = 'http://localhost:8050/render.html?' + urlencode(splash_payload)
-    # return splash_proxy_url
+    # return obj['url']
 
 class StockStatusSpider(scrapy.Spider):
     name = 'stock_status'
